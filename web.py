@@ -1,9 +1,9 @@
 import streamlit as st
 
 # Define logos as Base64 strings or URLs.
-left_logo = "https://github.com/Irfanmrd12/streamlit/blob/main/images.png"
-right_logo1 = "https://github.com/Irfanmrd12/streamlit/blob/main/images.png"
-right_logo2 = "https://github.com/Irfanmrd12/streamlit/blob/main/images.png"
+left_logo = "https://github.com/Irfanmrd12/streamlit/blob/main/images.png?raw=true"
+right_logo1 = "https://github.com/Irfanmrd12/streamlit/blob/main/images.png?raw=true"
+right_logo2 = "https://github.com/Irfanmrd12/streamlit/blob/main/images.png?raw=true"
 
 header_html = f"""
 <style>
