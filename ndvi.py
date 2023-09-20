@@ -133,8 +133,11 @@ for key, label in zip(keys, labels):
                 img_byte_array = io.BytesIO()
                 img_rgb.save(img_byte_array, format="PNG")
                 
-                # Menampilkan gambar di Streamlit
-                st.image(img_byte_array.getvalue(), caption=label, use_column_width=True)
+                # Membuat kolom dengan lebar 50% dari layar
+                col1, col2 = st.columns(2)
+                with col1:
+                    # Menampilkan gambar di Streamlit dengan lebar kolom
+                    st.image(img_byte_array.getvalue(), caption=label, use_column_width=True)
         except Exception as e:
             st.write(f"Error loading image: {e}")
     else:
